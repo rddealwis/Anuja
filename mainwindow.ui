@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{border:1px solid #40bd9e;}</string>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
@@ -73,13 +76,23 @@
       <bold>true</bold>
      </font>
     </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
     <property name="autoFillBackground">
      <bool>false</bool>
     </property>
     <property name="styleSheet">
      <string notr="true">QObject {
-    background-color: rgb(236, 236, 236)
-}</string>
+    background-color:#f5f6f6;
+	
+}
+
+QTabWidget:hover{
+ background-color: #40bd9e !important;
+}
+
+QObjectt{border:1px solid #40bd9e;}</string>
     </property>
     <property name="tabShape">
      <enum>QTabWidget::Rounded</enum>
@@ -98,7 +111,7 @@
     </property>
     <widget class="QWidget" name="tab_MainMenu">
      <attribute name="icon">
-      <iconset resource="../../QTProjects/Formular_Calculator_and_Integrator/resources.qrc">
+      <iconset>
        <normaloff>:/resources/resources/listicon.png</normaloff>:/resources/resources/listicon.png</iconset>
      </attribute>
      <attribute name="title">
@@ -240,7 +253,7 @@
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>70</y>
+        <y>60</y>
         <width>790</width>
         <height>41</height>
        </rect>
@@ -255,8 +268,10 @@
       </property>
       <property name="styleSheet">
        <string notr="true">QTextEdit{
-    background-color: rgb(255, 255, 255);	
-}</string>
+    background-color: #dbdbdb;	
+}
+
+</string>
       </property>
      </widget>
      <widget class="QFrame" name="frmBasicButtons">
@@ -273,9 +288,12 @@
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
- 	background-color: rgb(190, 190, 190);
-	border: 2px;
-}</string>
+ 	background-color:#dbdbdb;
+	border: 1px;
+	color:#464747;
+}
+
+QPushButton:hover{background-color:#40bd9e; color:white !important;}s</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
@@ -336,6 +354,10 @@
        <property name="autoFillBackground">
         <bool>false</bool>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{color:#36b495;}
+QPushButton:hover{color:white;}</string>
+       </property>
        <property name="text">
         <string>x</string>
        </property>
@@ -368,6 +390,10 @@
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{color:#36b495;}
+QPushButton:hover{color:white;}</string>
        </property>
        <property name="text">
         <string>÷</string>
@@ -402,6 +428,10 @@
        <property name="autoFillBackground">
         <bool>false</bool>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{Background-color:#cccccc;}
+QPushButton:hover{Background-color:#40bd9e}</string>
+       </property>
        <property name="text">
         <string>6</string>
        </property>
@@ -434,6 +464,10 @@
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{Background-color:#cccccc;}
+QPushButton:hover{Background-color:#40bd9e}</string>
        </property>
        <property name="text">
         <string>9</string>
@@ -468,6 +502,10 @@
        <property name="autoFillBackground">
         <bool>false</bool>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{Background-color:#cccccc;}
+QPushButton:hover{Background-color:#40bd9e}</string>
+       </property>
        <property name="text">
         <string>CE</string>
        </property>
@@ -500,6 +538,10 @@
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{color:#36b495;}
+QPushButton:hover{color:white;}</string>
        </property>
        <property name="text">
         <string>-</string>
@@ -534,6 +576,10 @@
        <property name="autoFillBackground">
         <bool>false</bool>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{Background-color:#cccccc;}
+QPushButton:hover{Background-color:#40bd9e}</string>
+       </property>
        <property name="text">
         <string>3</string>
        </property>
@@ -567,6 +613,11 @@
        <property name="autoFillBackground">
         <bool>false</bool>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{Background-color:#cccccc;}
+
+QPushButton:hover{Background-color:#40bd9e}</string>
+       </property>
        <property name="text">
         <string>DEL</string>
        </property>
@@ -599,6 +650,10 @@
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{Background-color:#cccccc;}
+QPushButton:hover{Background-color:#40bd9e}</string>
        </property>
        <property name="text">
         <string>C</string>
@@ -666,6 +721,10 @@
        <property name="autoFillBackground">
         <bool>false</bool>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{Background-color:#cccccc;}
+QPushButton:hover{Background-color:#40bd9e}</string>
+       </property>
        <property name="text">
         <string>1</string>
        </property>
@@ -698,6 +757,10 @@
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{Background-color:#cccccc;}
+QPushButton:hover{Background-color:#40bd9e}</string>
        </property>
        <property name="text">
         <string>2</string>
@@ -732,6 +795,10 @@
        <property name="autoFillBackground">
         <bool>false</bool>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{color:#36b495;}
+QPushButton:hover{color:white;}</string>
+       </property>
        <property name="text">
         <string>+/-</string>
        </property>
@@ -764,6 +831,10 @@
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{Background-color:#cccccc;}
+QPushButton:hover{Background-color:#40bd9e}</string>
        </property>
        <property name="text">
         <string>4</string>
@@ -831,6 +902,10 @@
        <property name="autoFillBackground">
         <bool>false</bool>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{Background-color:#cccccc;}
+QPushButton:hover{Background-color:#40bd9e}</string>
+       </property>
        <property name="text">
         <string>5</string>
        </property>
@@ -863,6 +938,10 @@
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{Background-color:#cccccc;}
+QPushButton:hover{Background-color:#40bd9e}</string>
        </property>
        <property name="text">
         <string>8</string>
@@ -996,6 +1075,10 @@
        <property name="autoFillBackground">
         <bool>false</bool>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{Background-color:#cccccc;}
+QPushButton:hover{Background-color:#40bd9e}</string>
+       </property>
        <property name="text">
         <string>7</string>
        </property>
@@ -1128,6 +1211,10 @@
        <property name="autoFillBackground">
         <bool>false</bool>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{color:#36b495;}
+QPushButton:hover{color:white;}</string>
+       </property>
        <property name="text">
         <string>+</string>
        </property>
@@ -1222,12 +1309,16 @@
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
- 	background-color: rgb(190, 190, 190);
+ 	background-color: #dbdbdb;
     border: 2px;
+	color:#464747;
 }
 QLabel{
  	background-color: rgb(190, 190, 190);
-}</string>
+
+}
+
+QPushButton:hover{background-color:#40bd9e; color:white;}</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
@@ -1456,6 +1547,9 @@ QLabel{
        <property name="autoFillBackground">
         <bool>false</bool>
        </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
        <property name="text">
         <string>Save Formula</string>
        </property>
@@ -1521,6 +1615,10 @@ QLabel{
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{color:#36b495;}
+QPushButton:hover{color:white;}</string>
        </property>
        <property name="text">
         <string>dy/dx</string>
@@ -1720,8 +1818,14 @@ QLabel{
        <property name="autoFillBackground">
         <bool>false</bool>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+
+background-color:#dbdbdb;
+}</string>
+       </property>
        <property name="text">
-        <string/>
+        <string>xx</string>
        </property>
        <property name="autoDefault">
         <bool>false</bool>
@@ -1885,6 +1989,10 @@ QLabel{
        <property name="autoFillBackground">
         <bool>false</bool>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{color:#36b495;}
+QPushButton:hover{color:white;}</string>
+       </property>
        <property name="text">
         <string>∫</string>
        </property>
@@ -1984,6 +2092,9 @@ QLabel{
        <property name="autoFillBackground">
         <bool>false</bool>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{color:#464747 !important;}</string>
+       </property>
        <property name="text">
         <string>Degrees</string>
        </property>
@@ -2011,6 +2122,9 @@ QLabel{
        <property name="autoFillBackground">
         <bool>false</bool>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{	color:#464747;}</string>
+       </property>
        <property name="text">
         <string>Radians</string>
        </property>
@@ -2024,6 +2138,11 @@ QLabel{
          <height>16</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+background-color:#dbdbdb;
+}</string>
+       </property>
        <property name="text">
         <string>x</string>
        </property>
@@ -2036,6 +2155,11 @@ QLabel{
          <width>16</width>
          <height>16</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+background-color:#dbdbdb;
+}</string>
        </property>
        <property name="text">
         <string>n</string>
@@ -2055,6 +2179,11 @@ QLabel{
          <pointsize>8</pointsize>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+background-color:#dbdbdb;
+}</string>
+       </property>
        <property name="text">
         <string>2</string>
        </property>
@@ -2068,6 +2197,11 @@ QLabel{
          <height>16</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+background-color:#dbdbdb;
+}</string>
+       </property>
        <property name="text">
         <string>y</string>
        </property>
@@ -2080,6 +2214,11 @@ QLabel{
          <width>16</width>
          <height>16</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+background-color:#dbdbdb;
+}</string>
        </property>
        <property name="text">
         <string>x</string>
@@ -2105,7 +2244,9 @@ QLabel{
       </property>
       <property name="styleSheet">
        <string notr="true">QTextEdit{
-    background-color: rgb(255, 255, 255);	
+    background-color: #dbdbdb;	
+	border-top:2px solid #40bd9e;
+	
 }</string>
       </property>
      </widget>
@@ -2138,8 +2279,6 @@ QLabel{
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources>
-  <include location="../../QTProjects/Formular_Calculator_and_Integrator/resources.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
