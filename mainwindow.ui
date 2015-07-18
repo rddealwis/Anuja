@@ -14,7 +14,14 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
+<<<<<<< HEAD
    <string notr="true">QMainWindow{border:1px solid #40bd9e;}</string>
+=======
+   <string notr="true">QMainWindow{
+ 	background-color: rgb(158, 158, 158);
+	border: 2px solid rgb(2, 255, 184);
+}</string>
+>>>>>>> origin/master
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QLabel" name="label">
@@ -1309,9 +1316,14 @@ QPushButton:hover{color:white;}</string>
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
+<<<<<<< HEAD
  	background-color: #dbdbdb;
     border: 2px;
 	color:#464747;
+=======
+ 	background-color: rgb(190, 190, 190);
+	border: 2px;
+>>>>>>> origin/master
 }
 QLabel{
  	background-color: rgb(190, 190, 190);
