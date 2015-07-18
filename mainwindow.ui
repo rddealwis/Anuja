@@ -13,6 +13,12 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+ 	background-color: rgb(158, 158, 158);
+	border: 2px solid rgb(2, 255, 184);
+}</string>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
@@ -1223,7 +1229,7 @@
       <property name="styleSheet">
        <string notr="true">QPushButton{
  	background-color: rgb(190, 190, 190);
-    border: 2px;
+	border: 2px;
 }
 QLabel{
  	background-color: rgb(190, 190, 190);
