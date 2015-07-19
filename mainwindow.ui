@@ -71,14 +71,6 @@
       <height>490</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>Lao UI</family>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="mouseTracking">
      <bool>false</bool>
     </property>
@@ -1153,6 +1145,9 @@ QPushButton:hover{Background-color:#40bd9e}</string>
        <property name="autoFillBackground">
         <bool>false</bool>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{background-color:#36b495;color:white;}</string>
+       </property>
        <property name="text">
         <string>=</string>
        </property>
@@ -1353,6 +1348,7 @@ QPushButton:hover{color:white;}</string>
  	background-color: #dbdbdb;
     border: 2px;
 	color:#464747;
+
 }
 QLabel{
  	background-color: rgb(190, 190, 190);
@@ -2136,7 +2132,10 @@ QPushButton:hover{color:white;}</string>
         <bool>false</bool>
        </property>
        <property name="styleSheet">
-        <string notr="true">QRadioButton{color:#464747 !important;}</string>
+        <string notr="true">QRadioButton{
+color:#464747 !important; 
+
+}</string>
        </property>
        <property name="text">
         <string>Degrees</string>
