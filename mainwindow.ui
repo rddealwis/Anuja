@@ -20,10 +20,10 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>743</x>
-      <y>10</y>
-      <width>111</width>
-      <height>41</height>
+      <x>710</x>
+      <y>-35</y>
+      <width>151</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="font">
@@ -35,13 +35,16 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QLabel{color:#36b495;
-background-image: url(:/resources/resources/logo.png);
-}
-</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resources.qrc">:/resources/resources/logo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -2338,6 +2341,8 @@ color:#464747 !important;
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
