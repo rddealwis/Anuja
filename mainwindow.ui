@@ -35,10 +35,13 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QLabel{color:#36b495;}</string>
+     <string notr="true">QLabel{color:#36b495;
+background-image: url(:/resources/resources/logo.png);
+}
+</string>
     </property>
     <property name="text">
-     <string>INFINITY</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -301,7 +304,7 @@ QTabWidget:hover{
       <property name="styleSheet">
        <string notr="true">QTextEdit{
     background-color: #dbdbdb;	
-	border-bottom:2px solid #40bd9e;
+	
 }
 
 </string>
@@ -2292,7 +2295,7 @@ color:#464747 !important;
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>20</y>
+        <y>30</y>
         <width>790</width>
         <height>41</height>
        </rect>
